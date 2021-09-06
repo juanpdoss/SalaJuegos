@@ -6,6 +6,9 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { QuienSoyComponent } from './quien-soy/quien-soy.component';
 import { ErrorComponent } from './error/error.component';
+import { AhorcadoComponent } from './juegos/ahorcado/ahorcado.component';
+import { MayorMenorComponent } from './juegos/mayor-menor/mayor-menor.component';
+import { PreguntadosComponent } from './juegos/preguntados/preguntados.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +17,9 @@ import { ErrorComponent } from './error/error.component';
     HomeComponent,
     QuienSoyComponent,
     ErrorComponent,
+    AhorcadoComponent,
+    MayorMenorComponent,
+    PreguntadosComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
