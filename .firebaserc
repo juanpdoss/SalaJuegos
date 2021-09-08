@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "salajuegos-2c9f6": {
+      "hosting": {
+        "salaJuegos": [
+          "salajuegos-2c9f6"
+        ]
+      }
+    }
+  }
+}

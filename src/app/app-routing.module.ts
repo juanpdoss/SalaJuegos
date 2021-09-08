@@ -7,6 +7,7 @@ import { QuienSoyComponent } from './quien-soy/quien-soy.component';
 import { AhorcadoComponent } from './juegos/ahorcado/ahorcado.component';
 import { MayorMenorComponent } from './juegos/mayor-menor/mayor-menor.component';
 import { PreguntadosComponent } from './juegos/preguntados/preguntados.component';
+import { RegistroComponent } from './registro/registro.component';
 
 //defino las rutas
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'mayorMenor', component: MayorMenorComponent },
   { path: 'preguntados', component: PreguntadosComponent },
   { path: 'ahorcado', component: AhorcadoComponent },
+  { path: 'registrarse', component: RegistroComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', component: ErrorComponent },
 ];

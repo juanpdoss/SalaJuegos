@@ -9,6 +9,9 @@ import { ErrorComponent } from './error/error.component';
 import { AhorcadoComponent } from './juegos/ahorcado/ahorcado.component';
 import { MayorMenorComponent } from './juegos/mayor-menor/mayor-menor.component';
 import { PreguntadosComponent } from './juegos/preguntados/preguntados.component';
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +23,14 @@ import { PreguntadosComponent } from './juegos/preguntados/preguntados.component
     AhorcadoComponent,
     MayorMenorComponent,
     PreguntadosComponent,
+    RegistroComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp({})),
+    provideFirestore(() => getFirestore()),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
