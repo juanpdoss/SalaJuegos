@@ -1,13 +1,17 @@
 <body class="text-center">
   <form class="form-signin">
     <br /><br /><br /><br /><br /><br />
-    <h1 class="h3 mb-3 font-weight-normal">¡Hola!</h1>
+    <h1 class="h3 mb-3 font-weight-normal">
+      ¡Hola! inicia sesión con tu email y contraseña.
+    </h1>
     <label for="inputEmail" class="sr-only"></label>
     <input
       type="email"
       id="inputEmail"
       class="form-control"
       placeholder="Correo"
+      [(ngModel)]="user.email"
+      [ngModelOptions]="{ standalone: true }"
       required
       autofocus
     />
@@ -17,14 +21,17 @@
       id="inputPassword"
       class="form-control"
       placeholder="Contraseña"
+      [(ngModel)]="user.password"
+      [ngModelOptions]="{ standalone: true }"
       required
     />
     <div class="checkbox mb-3">
       <label> <input type="checkbox" value="remember-me" /> Recordarme </label>
     </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">
+    <button class="btn btn-lg btn-primary btn-block" (click)="Loguear()">
       Iniciar sesión
     </button>
+
     <p class="mt-5 mb-3 text-muted">&copy; 2021-2022</p>
   </form>
 </body>
